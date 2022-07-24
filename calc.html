@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: -webkit-linear-gradient(30deg,rgba(204, 21, 21, 0.644),rgba(26, 23, 199, 0.63));
+            height: 720px;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 120px;
+
+        }
+        .box{
+            width: 450px;
+            height: 450px;
+            background-color: rgba(255, 255, 255, 0.795);
+            box-shadow: 0 8px 6px rgba(0,0,0,0.2);   
+        }
+        .screen{
+            width: 420px;
+            height: 100px;
+            position: relative;
+            top: 10px;
+            left: 15px;
+            background: rgba(0, 0, 0, 0.055);
+            margin-bottom: 12px;
+        }
+        .buttoms{
+            margin-top: 15px;
+            position: relative;
+        
+            text-align: center;
+        }
+        
+            button{
+                width:75px;
+                height: 70px;
+                /* padding: 15px; */
+                margin: 5px;
+                border: none;
+                color: rgba(0, 0, 0);
+                background-color:darkseagreen;
+                font-size: 20px;
+                cursor: pointer;
+        }
+        button:active {
+                 background-color: rgb(117, 182, 117);
+                 box-shadow: 0 2px rgba(102, 102, 102, 0.397);
+                 transform: translateY(4px);
+        }
+        button:hover{
+            background-color: rgb(117, 182, 117);
+        }
+        #enterbutton{
+            background-color: #f4971e;
+        }
+        #enterbutton:hover{
+            background-color: #cf7f16;
+        }
+        
+        input{
+            width: 410px;
+            height: 90px;
+            position: relative;
+            left: 4px;
+            top:5px;
+            background: rgba(0, 0, 0, 0.014);
+            border: none;
+        }
+        input[type="text"]
+        {
+    font-size:30px;
+            text-align: right;
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box">
+                <div class="screen" >
+                    <input type="text" id="screen">
+                </div>
+            <div class="buttoms">
+                <table id="tabal">
+                   <tr class="trow">
+                       <button>0</button>
+                    <button>/</button>
+                    <button>X</button>
+                    <button>-</button>
+                      
+                    <button>C</button>
+                   </tr>
+                   <tr class="trow">
+                       <button>7</button>
+                       <button>8</button>
+                       <button>9</button>
+                       <button>(</button>
+                       <button>)</button>
+                    </tr>
+                    <tr class="trow">
+                        <button>4</button>
+                        <button>5</button>
+                       <button>6</button>
+                       <button>%</button>
+                       <button>+</button>
+                    </tr>
+                    <tr class="trow">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>.</button>
+                    <button id="enterbutton">Enter</button>
+                   </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
